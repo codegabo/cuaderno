@@ -1,0 +1,44 @@
+.widget{
+   @extend %boton;
+  transition: all .1s;
+ }
+.notes, .main-container{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width:$max-width;
+}
+.new-note, .new-entry, .hide-entry{
+  .icon-add, .icon-hide{
+    transition: all .3s;
+    position: absolute;
+    top: 30%;
+    color: transparent;
+  }
+}
+.new-note{
+  &:hover .icon-add{
+    transition: all .3s;
+    top: 0;
+    left: 95%;
+    color:$third-color;
+    background-color: $second-color;
+    padding:0.7em 0.5em 0.3em;
+  }
+  .icon-add{
+    left: 0;
+  }
+}
+.new-entry{
+  &:hover .icon-add{
+    transition: all .3s;
+    top: 0;
+    left: -25%;
+    color:$third-color;
+    background-color: $second-color;
+    padding:0.7em 0.5em 0.3em;
+  }
+  .icon-add{
+    left: 85%;
+  }
+}

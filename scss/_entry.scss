@@ -1,0 +1,30 @@
+.entry-container{
+  padding-bottom:1em;
+}
+.entry-container h3 {
+  @extend %subtitulo-body;
+  &::selection {
+    background: $second-color;
+    color: $third-color;
+  }
+}
+.title-entry{
+ &::selection {
+    @extend %selec-bg;
+  }
+}
+.title-entry{
+  @extend %titulo-body;
+  padding-top: 1em;
+}
+.title-info, .entry-container p{
+  @extend %info-titulo-body;
+  &::selection {
+    @extend %selec-bg;
+    font-size:$info-font;
+  }
+}
+.entry-container iframe{
+  padding-top: .3em;
+  padding-bottom:.3em;
+}

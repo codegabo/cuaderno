@@ -1,0 +1,82 @@
+#modal {
+  background: rgba($first-color, .9);
+  color: #fff;
+  position: fixed;
+  top: -100vh;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  transition: all .2s;
+  cursor: default;
+}
+.modal-info{
+  width: 90%;
+  height: 80%;
+  position: absolute;
+  top: -15%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  //border:1px solid yellow;
+  border-radius: 5px;
+  @include medias(1024px){
+    max-width: 70%;
+  }
+  @include medias(1400px){
+    max-width: 60%;
+  }
+  @include medias(2500px){
+    max-width: 50%;
+  }
+
+  iframe{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+#mostrar-modal {
+  display: none;
+}
+#mostrar-modal + label{
+  @extend %boton;
+}
+#mostrar-modal:checked ~ #modal {
+  top: 5.3em;
+}
+
+
+
+#mostrar-modal:checked ~ #cerrar-modal + label {
+  display: block;
+}
+#mostrar-modal:checked + label {
+  display: none;
+}
+
+#cerrar-modal {
+  display: none;
+}
+#cerrar-modal + label {
+  @extend %boton;
+  display: none;
+  transition: all .2s;
+  &:hover .icon-hide{
+    transition: all .3s;
+    top: 0;
+    left: -20%;
+    color:$third-color;
+    background-color: $second-color;
+    padding:0.7em 0.5em 0.3em;
+  }
+  .icon-hide{
+    left: 90%;
+  }
+}
+#cerrar-modal:checked #modal {
+  top: -100vh;
+}
+#cerrar-modal:checked + label {
+  display: none;
+}

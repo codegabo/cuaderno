@@ -1,0 +1,67 @@
+.main-form{
+  background: rgba($first-color, 0.7);
+  max-width: 100%;
+  padding: .5em;
+  border:none;
+  border-radius: 5px;
+}
+.form-container{
+  border:none;
+}
+.form__new-entry{
+  @extend %subtitulo;
+  $default-color:$third-color !default;
+  color:$default-color;
+}
+.form{
+  border:none;
+  padding: .5em 0 0;
+  display: flex;
+  flex-direction:column;
+}
+[class$="label"]{
+  @extend %subtitulo-body;
+  padding: .3em 0;
+}
+[class$="input"], [class$="textarea"]{
+  padding: .5em;
+  border-radius: 3px;
+  border:none;
+  margin:.3em 0;
+  background-color:$third-color;
+  width: 100%;
+}
+[class$="textarea"]{
+  min-height:200px;
+  max-height: 400px;
+  resize: vertical;
+}
+.desc_entry-textarea{
+  min-height:60px;
+  max-height: 80px;
+}
+.buttons-form{
+  padding: 0;
+  display: flex;
+  flex-direction:row-reverse;
+  justify-content:space-between;
+}
+.publish-botton{
+  $default-color:$fourth-color !default;
+  background-color:$default-color;
+  &:active{
+
+  }
+}
+.content-warning{
+  display: block;
+  font-size:$widget-font + 2;
+  color: $third-color;
+  padding: .5em;
+}
+.warning__list{
+  padding: .7em;
+}
+.guia_entry-label{
+  display: none;
+}

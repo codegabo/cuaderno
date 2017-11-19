@@ -1,0 +1,53 @@
+.header-container{
+  padding: 0.5em 0.5em 0.1em;
+  background-color:$first-color;
+  color: $third-color;
+  display: flex;
+  position: sticky;
+  top: 0;
+  flex-direction:column;
+  z-index:10;
+}
+.hcindex{
+  padding-bottom: .5em;
+}
+.title-container{
+ display: flex;
+ align-items:center;
+ justify-content:space-between;
+ }
+.widgets-header{
+  width: 100%;
+  display: flex;
+  justify-content:space-between;
+  flex-direction:row;
+  margin: .5em auto;
+}
+.title-course{
+  @extend %titulo;
+  justify-content:flex-start;
+  &::selection {
+    background: $second-color;
+    color: $third-color;
+  }
+}
+#show-menu{
+  display: none;
+  + .label-menu {
+    color: $third-color;
+  }
+  &:checked ~ .menu-container {
+    right: 0;
+    box-shadow: -200px 0 13px -1px rgba($first-color,0.75);
+    @include medias(640px){
+      box-shadow: none;
+    }
+  }
+}
+.icon-menu{
+  font-size: 1.8em;
+  cursor: pointer;
+}
+//.new-guide{
+//  font-size:$widget-font + 4;
+//}
