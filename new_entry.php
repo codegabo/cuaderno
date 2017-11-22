@@ -47,7 +47,10 @@ $idguia=$data['id_guia'];
                   <li class="warning__list__item">Si deseas insertar contenido embedido eres libre de hacerlo.</li>
                </ul>
             </em>
-            <textarea name="cont" id="cont_entry-textarea" class="cont_entry-textarea" required></textarea>
+            <textarea name="cont" id="cont_entry-textarea" class="cont_entry-textarea" required><h3></h3>
+<p></p>
+<pre class="language-"><code></code></pre>
+            </textarea>
          </label>
          <div class="buttons-form">
             <button type="submit" class="widget publish-botton">Publicar entrada</button>
