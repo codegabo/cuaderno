@@ -17,6 +17,7 @@ $idguia=$data['id_guia'];
    <!--<base href="https://www.gabrielmogollon.com/index.html"/>-->
    <link href="https://file.myfontastic.com/6GwqSE8XRsXZbF4AF8dQHB/icons.css" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+   <link rel="stylesheet" href="css/prism.css">
    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
@@ -97,5 +98,6 @@ $idguia=$data['id_guia'];
        <?php   }  ?>
    </div>
 </main>
+<script src="js/prism.js"></script>
 </body>
 </html>

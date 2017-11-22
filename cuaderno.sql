@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 19-11-2017 a las 21:26:00
+-- Tiempo de generación: 20-11-2017 a las 00:46:54
 -- Versión del servidor: 10.1.8-MariaDB
 -- Versión de PHP: 5.6.14
 
@@ -33,6 +33,17 @@ CREATE TABLE `entrada` (
   `descr` varchar(1000) CHARACTER SET latin1 NOT NULL,
   `cont` varchar(50000) CHARACTER SET latin1 NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Volcado de datos para la tabla `entrada`
+--
+
+INSERT INTO `entrada` (`id`, `id_guia`, `titulo`, `descr`, `cont`) VALUES
+(1, '2', 'Selectores de etiqueta', 'Indican que elemento del HTML se veran afectados', '<p>Indican que elemento del HTML se veran afectados</p>'),
+(2, '2', 'Selectores descendientes', 'Son selectores separados por un espacio.\r\nEl primero es un padre y el segundo es un hijo\r\n', ' '),
+(3, '2', 'Selectores compuestos', 'Este tipo de selectores se pueden identificar por que asocian a otras clases o identificadores unicos a travÃ©s de elementos como coma (,), signo mas (+), Virgulilla (~) y muchos otros.', ' '),
+(4, '1', 'HTML5', 'Es un lenguaje de marcado, o sea que marca los elementos\r\n ', '-Le inidica a los navegadores los elementos \r\n\r\n<P>Meta(metadato): datos adicionales que se le dan al navegador</P>\r\n'),
+(5, '3', 'SASS', 'lENGUAJE DE ESTILOS COMPILADO DE CSS', ' ');
 
 -- --------------------------------------------------------
 
@@ -101,7 +112,7 @@ ALTER TABLE `nota`
 -- AUTO_INCREMENT de la tabla `entrada`
 --
 ALTER TABLE `entrada`
-  MODIFY `id` int(3) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT de la tabla `guia`
 --

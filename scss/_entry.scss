@@ -9,13 +9,11 @@
   }
 }
 .title-entry{
- &::selection {
+  @extend %titulo-body;
+  padding-top: 2.5em;
+  &::selection {
     @extend %selec-bg;
   }
-}
-.title-entry{
-  @extend %titulo-body;
-  padding-top: 1em;
 }
 .title-info, .entry-container p{
   @extend %info-titulo-body;
@@ -27,4 +25,7 @@
 .entry-container iframe{
   padding-top: .3em;
   padding-bottom:.3em;
+}
+pre, code{
+  z-index: 3;
 }

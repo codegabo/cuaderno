@@ -8,8 +8,9 @@
   padding: .2em;
   flex-direction:column;
   box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.42);
-  &__details{
-  }
+}
+.title-entry{
+  z-index:4;
 }
 .notes__details__titulo{
   cursor: pointer;

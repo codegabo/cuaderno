@@ -15,6 +15,7 @@ $idguia=$data['id_guia'];
    <meta name="google-site-verification" content="uxyOjfseMlhhDOK5lcxJRCqvKwUN9wCZ824LAaWii7w" />
    <link href="https://file.myfontastic.com/6GwqSE8XRsXZbF4AF8dQHB/icons.css" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+   <link rel="stylesheet" href="css/prism.css">
    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
@@ -40,10 +41,10 @@ $idguia=$data['id_guia'];
             <em class="content-warning">
                <ul class="warning__list">
                   <li class="warning__list__item">Este recuadro puede ser usado como editor de codigo HTML y CSS</li>
-                  <li class="warning__list__item">Para introductir fragmentos de codigo utiliza este orden de etiquetas</li>
-                  <li class="warning__list__item">Si deseas agregar estilos propios, puedes agregarlos dentro de las etiquetas <code>&lt;pre&gt;&lt;code&gt; &lt;/code&gt; &lt;/pre&gt;</code> .</li>
+                  <li class="warning__list__item">Para introducir fragmentos de codigo utiliza este orden de etiquetas <code>&lt;pre&gt;&lt;code&gt; &lt;/code&gt; &lt;/pre&gt;</code> .</li>
+                  <li class="warning__list__item">Para entidades HTML reemplaza < y > por & lt; y & gt;
                   <li class="warning__list__item">Para los subtitulos de tu contenido usa la etiqueta <code>&lt;h3&gt; &lt;/h3&gt;</code> y para su contenido usa  <code>&lt;p&gt; &lt;/p&gt;</code> , no insertes clases o identificadores en estas etiquetas.</li>
-                  <li class="warning__list__item">Si deseas insertar conteniido embedido eres libre de hacerlo.</li>
+                  <li class="warning__list__item">Si deseas insertar contenido embedido eres libre de hacerlo.</li>
                </ul>
             </em>
             <textarea name="cont" id="cont_entry-textarea" class="cont_entry-textarea" required></textarea>
@@ -56,5 +57,6 @@ $idguia=$data['id_guia'];
       <div class="success-warning"></div>
    </fieldset>
 </main>
+<script src="js/prism.js"></script>
 </body>
 </html>

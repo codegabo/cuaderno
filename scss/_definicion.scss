@@ -1,3 +1,8 @@
+@mixin medias($min-width){
+  @media screen and(min-width: $min-width){
+    @content;
+  }
+}
 %titulo {
   font-size: $title-font;
   color: $third-color;
@@ -28,13 +33,18 @@
 }
 %titulo-body{
   $default-color:$fifht-color !default;
+  $default-font:$title-font - 6;
   @extend %titulo;
+  font-size:$default-font;
   color:$default-color;
   background-color:#fff;
   position: sticky;
   border-bottom:3px solid$second-color;
   top: 3.5em;
   margin-bottom: .3em;
+  @include medias(1024px){
+      $default-font:$title-font - 4;
+  }
 }
 %subtitulo-body{
   $default-color:$fourth-color !default;
@@ -49,9 +59,4 @@
 %selec-bg{
     background: $second-color;
     color: $third-color;
-}
-@mixin medias($min-width){
-  @media screen and(min-width: $min-width){
-    @content;
-  }
 }
