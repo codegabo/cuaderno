@@ -43,7 +43,7 @@ $idguia=$data['id_guia'];
                   <li class="warning__list__item">Este recuadro puede ser usado como editor de codigo HTML y CSS</li>
                   <li class="warning__list__item">Para introducir fragmentos de codigo utiliza este orden de etiquetas <code>&lt;pre&gt;&lt;code&gt; &lt;/code&gt; &lt;/pre&gt;</code> .</li>
                   <li class="warning__list__item">Para entidades HTML reemplaza < y > por & lt; y & gt;
-                  <li class="warning__list__item">Para los subtitulos de tu contenido usa la etiqueta <code>&lt;h3&gt; &lt;/h3&gt;</code> y para su contenido usa  <code>&lt;p&gt; &lt;/p&gt;</code> , no insertes clases o identificadores en estas etiquetas.</li>
+                  <li class="warning__list__item">Para los subtitulos de tu contenido usa la etiqueta <code>&lt;h3&gt; &lt;/h3&gt;</code> y para su contenido usa  <code>&lt;p&gt; &lt;/p&gt;</code></li>
                   <li class="warning__list__item">Si deseas insertar contenido embedido eres libre de hacerlo.</li>
                </ul>
             </em>

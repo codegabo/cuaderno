@@ -75,3 +75,13 @@
   display: flex;
   justify-content:center;
 }
+.disqus-comments{
+  width: 90%;
+  max-width: $max-max-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding:5em 0;
+  &--guia{
+    max-width: $max-width;
+  }
+}
